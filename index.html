@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xth HTML Short Notes</title>
+  <style>
+    body{
+      font-weight: 900;
+      color: white;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    h1,h2{
+      text-align: center;
+      text-decoration: underline;
+      color: rgb(144, 134, 208);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    code{
+      font-size: x-large;
+    }
+  </style>
+</head>
+<body background="bck.webp">
+  <h1>HTML</h1>
+  <ol type="i">
+    <li>HTML was developed by Tim-Berners Lee in 1996. An HTML plain file contains only text and nothing else. HTML stands for Hyper Text Markup Language.</li>
+    <li>Hypertext is simply a piece of text that works as a link</li>
+    <li>Markup language is way of writing layout information within documents.</li>
+  </ol>
+  <h1>Tags</h1>
+  <dl>
+    <dt>1. Container Tags</dt>
+    <dd>Container tags are used to wrap content in a container. They have an opening tag and a closing tag. For example, <code>&lt;div&gt;</code> and <code>&lt;/div&gt;</code></dd>
+    <dt>2. Empty Tags</dt>
+    <dd>Empty tags are used to create content that doesn't need a closing tag. For example, <code>&lt;br&gt;</code> and <code>&lt;hr&gt;</code></dd><br>
+  </dl>
+  <h1>Structure of HTML Document</h1>
+  <pre>
+    <code>
+      &lt;html&gt;
+        &lt;head&gt;
+          &lt;title&gt;Title of the document&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;h1&gt;This is a heading&lt;/h1&gt;
+          &lt;p&gt;This is a paragraph&lt;/p&gt;
+        &lt;/body&gt;
+      &lt;/html&gt;
+    </code>
+    </pre>
+    <h2>Body Tag</h2>
+<p>The body tag is used to define the main content of the HTML document. It contains all the content that is visible to the user. The body tag is placed inside the HTML tag. The body tag has an opening tag <code>&lt;body&gt;</code> and a closing tag <code>&lt;/body&gt;</code>.</p>
+<h3>Attributes of Body tags are,</h3>
+<ul>
+  <li><code>background="url"</code>: Specifies the background image for the document.</li>
+  <li><code>bgcolor="color"</code>: Sets the background color of the document.</li>
+  <li><code>text="color"</code>: Sets the color of the text in the document.</li>
+  <li><code>link="color"</code>: Sets the color of unvisited links.</li>
+  <li><code>vlink="color"</code>: Sets the color of visited links.</li>
+  <li><code>alink="color"</code>: Sets the color of active links.</li>
+  <li><code>leftmargin="value"</code>: Sets the left margin of the document.</li>
+  <li><code>rightmargin="value"</code>: Sets the right margin of the document.</li>
+</ul>
+<h2>Heading Tags</h2>
+<p>Heading tags are used to define headings in an HTML document. There are six levels of headings, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>, with <code>&lt;h1&gt;</code> being the highest level and <code>&lt;h6&gt;</code> the lowest.</p>
+<p>Syntax:</p>
+<pre><code>&lt;h1 align="center"&gt;This is a heading&lt;/h1&gt;</code></pre>
+<p>Attributes of Heading tags are,</p>
+<ul>
+  <li><code>align="left|center|right"</code>: Specifies the alignment of the heading.</li>
+</ul>
+
+<h2>Horizontal Rule Tag</h2>
+<p>The horizontal rule tag is used to create a horizontal line in an HTML document. It is an empty tag and does not require a closing tag.</p>
+<p>Syntax:</p>
+<pre><code>&lt;hr align="center" noshade size="3" width="50%" color="blue"&gt;</code></pre>
+<p>Attributes of Horizontal Rule tags are,</p>
+<ul>
+  <li><code>align="left|center|right"</code>: Specifies the alignment of the horizontal rule.</li>
+  <li><code>noshade</code>: Removes the shading effect, making the line solid.</li>
+  <li><code>size="value"</code>: Specifies the height of the horizontal rule.</li>
+  <li><code>width="value|%"</code>: Specifies the width of the horizontal rule.</li>
+  <li><code>color="color"</code>: Specifies the color of the horizontal rule.</li>
+</ul>
+
+<h2>Break Line Tag</h2>
+<p>The break line tag is used to insert a line break in an HTML document. It is an empty tag and does not require a closing tag.</p>
+<p>Syntax:</p>
+<pre><code>&lt;br&gt;</code></pre>
+
+<h2>Comment in HTML</h2>
+<p>Comments are used to insert notes or explanations in the HTML code. Comments are not displayed in the browser.</p>
+<p>Syntax:</p>
+<pre><code>&lt;!-- This is a comment --&gt;</code></pre>
+
+<h2>Center Tag</h2>
+<p>The center tag is used to center-align text or other content in an HTML document. Note that the <code>&lt;center&gt;</code> tag is not supported in HTML5 and CSS should be used instead.</p>
+<p>Syntax:</p>
+<pre><code>&lt;center&gt;This text is centered&lt;/center&gt;</code></pre>
+<h2>Paragraph Tag</h2>
+<p>The paragraph tag is used to define a paragraph in an HTML document. It has an opening tag <code>&lt;p&gt;</code> and a closing tag <code>&lt;/p&gt;</code>.</p>
+<p>Syntax:</p>
+<pre><code>&lt;p align="center"&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+<p>Attributes of Paragraph tags are,</p>
+<ul>
+  <li><code>align="left|center|right|justify"</code>: Specifies the alignment of the paragraph.</li>
+</ul>
+<p>Output:</p>
+<p align="center">This is a paragraph.</p>
+
+<h2>Font Tag</h2>
+<p>The font tag is used to define the font, size, and color of the text in an HTML document. It has an opening tag <code>&lt;font&gt;</code> and a closing tag <code>&lt;/font&gt;</code>.</p>
+<p>Syntax:</p>
+<pre><code>&lt;font size="4" color="blue" face="Arial"&gt;This is a text.&lt;/font&gt;</code></pre>
+<p>Attributes of Font tags are,</p>
+<ul>
+  <li><code>size="value"</code>: Specifies the size of the text.</li>
+  <li><code>color="color"</code>: Specifies the color of the text.</li>
+  <li><code>face="font"</code>: Specifies the font of the text.</li>
+</ul>
+<p>Output:</p>
+<font size="4" color="blue" face="Arial">This is a text.</font>
+
+<h2>Bold Tag</h2>
+<p>The bold tag is used to make the text bold. It has an opening tag <code>&lt;b&gt;</code> and a closing tag <code>&lt;/b&gt;</code>.</p>
+<p>Syntax:</p>
+<pre><code>&lt;b&gt;This is bold text.&lt;/b&gt;</code></pre>
+<p>Output:</p>
+<b>This is bold text.</b>
+
+<h2>Italic Tag</h2>
+<p>The italic tag is used to make the text italic. It has an opening tag <code>&lt;i&gt;</code> and a closing tag <code>&lt;/i&gt;</code>.</p>
+<p>Syntax:</p>
+<pre><code>&lt;i&gt;This is italic text.&lt;/i&gt;</code></pre>
+<p>Output:</p>
+<i>This is italic text.</i>
+
+<h2>Underline Tag</h2>
+<p>The underline tag is used to underline the text. It has an opening tag <code>&lt;u&gt;</code> and a closing tag <code>&lt;/u&gt;</code>.</p>
+<p>Syntax:</p>
+<pre><code>&lt;u&gt;This is underlined text.&lt;/u&gt;</code></pre>
+<p>Output:</p>
+<u>This is underlined text.</u>
+
+<h2>Subscript Tag</h2>
+<p>The subscript tag is used to define subscript text. It has an opening tag <code>&lt;sub&gt;</code> and a closing tag <code>&lt;/sub&gt;</code>.</p>
+<p>Syntax:</p>
+<pre><code>&lt;sub&gt;This is subscript text.&lt;/sub&gt;</code></pre>
+<p>Output:</p>
+<p>Simple Text<sub>This is subscript text.</sub></p>
+
+<h2>Superscript Tag</h2>
+<p>The superscript tag is used to define superscript text. It has an opening tag <code>&lt;sup&gt;</code> and a closing tag <code>&lt;/sup&gt;</code>.</p>
+<p>Syntax:</p>
+<pre><code>&lt;sup&gt;This is superscript text.&lt;/sup&gt;</code></pre>
+<p>Output:</p>
+<p>Simple Text<sup>This is superscript text.</sup></p>
+
+<h2>Strikethrough Tag</h2>
+<p>The strikethrough tag is used to define strikethrough text. It has an opening tag <code>&lt;s&gt;</code> and a closing tag <code>&lt;/s&gt;</code>.</p>
+<p>Syntax:</p>
+<pre><code>&lt;s&gt;This is strikethrough text.&lt;/s&gt;</code></pre>
+<p>Output:</p>
+<s>This is strikethrough text.</s>
+
+<h2>HTML Entities</h2>
+<p>HTML entities are used to display reserved characters in HTML. For example, to display the less than sign (&lt;), you can use the entity <code>&amp;lt;</code>.</p>
+<p>Syntax:</p>
+<pre><code>&amp;lt; &amp;gt; &amp;amp; &amp;quot; &amp;apos;</code></pre>
+<h2>Image Tag</h2>
+<p>The image tag is used to embed an image in an HTML document. It is an empty tag and does not require a closing tag.</p>
+<p>Syntax:</p>
+<pre><code>&lt;img src="url" alt="description" height="100" width="100" align="left" border="1"&gt;</code></pre>
+<p>Attributes of Image tags are,</p>
+<ul>
+  <li><code>src="url"</code>: Specifies the URL of the image.</li>
+  <li><code>alt="description"</code>: Provides an alternative text for the image.</li>
+  <li><code>height="value"</code>: Specifies the height of the image.</li>
+  <li><code>width="value"</code>: Specifies the width of the image.</li>
+  <li><code>align="left|right|top|middle|bottom"</code>: Specifies the alignment of the image.</li>
+  <li><code>border="value"</code>: Specifies the border width of the image.</li>
+</ul>
+
+<h2>Anchor Tag</h2>
+<p>The anchor tag is used to create hyperlinks in an HTML document. It has an opening tag <code>&lt;a&gt;</code> and a closing tag <code>&lt;/a&gt;</code>.</p>
+<p>Syntax:</p>
+<pre><code>&lt;a href="url" name="anchorName"&gt;Link Text&lt;/a&gt;</code></pre>
+<p>Attributes of Anchor tags are,</p>
+<ul>
+  <li><code>href="url"</code>: Specifies the URL of the link.</li>
+  <li><code>name="anchorName"</code>: Specifies the name of the anchor.</li>
+</ul>
+<p>Output:</p>
+<a href="https://www.example.com" name="exampleAnchor">Example Link</a>
+
+<h2>Ordered List</h2>
+<p>The ordered list tag is used to create an ordered list in an HTML document. It has an opening tag <code>&lt;ol&gt;</code> and a closing tag <code>&lt;/ol&gt;</code>.</p>
+<p>Syntax:</p>
+<pre><code>&lt;ol type="1" start="1"&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+<p>Attributes of Ordered List tags are,</p>
+<ul>
+  <li><code>type="1|A|a|I|i"</code>: Specifies the type of numbering.</li>
+  <li><code>start="value"</code>: Specifies the starting number of the list.</li>
+</ul>
+<p>Output:</p>
+<ol type="1" start="1">
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ol>
+
+<h2>Unordered List</h2>
+<p>The unordered list tag is used to create an unordered list in an HTML document. It has an opening tag <code>&lt;ul&gt;</code> and a closing tag <code>&lt;/ul&gt;</code>.</p>
+<p>Syntax:</p>
+<pre><code>&lt;ul type="disc"&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<p>Attributes of Unordered List tags are,</p>
+<ul>
+  <li><code>type="disc|circle|square"</code>: Specifies the type of bullet points.</li>
+</ul>
+<p>Output:</p>
+<ul type="disc">
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
+
+<h2>Nested List</h2>
+<p>A nested list is a list within another list.</p>
+<p>Syntax:</p>
+<pre><code>&lt;ul&gt;
+  &lt;li&gt;Item 1
+    &lt;ul&gt;
+      &lt;li&gt;Subitem 1&lt;/li&gt;
+      &lt;li&gt;Subitem 2&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<p>Output:</p>
+<ul>
+  <li>Item 1
+    <ul>
+      <li>Subitem 1</li>
+      <li>Subitem 2</li>
+    </ul>
+  </li>
+  <li>Item 2</li>
+</ul>
+
+<h2>Definition List</h2>
+<p>The definition list tag is used to create a list of terms and their definitions. It has an opening tag <code>&lt;dl&gt;</code> and a closing tag <code>&lt;/dl&gt;</code>.</p>
+<p>Syntax:</p>
+<pre><code>&lt;dl&gt;
+  &lt;dt&gt;Term 1&lt;/dt&gt;
+  &lt;dd&gt;Definition 1&lt;/dd&gt;
+  &lt;dt&gt;Term 2&lt;/dt&gt;
+  &lt;dd&gt;Definition 2&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+<p>Output:</p>
+<dl>
+  <dt>Term 1</dt>
+  <dd>Definition 1</dd>
+  <dt>Term 2</dt>
+  <dd>Definition 2</dd>
+</dl>
+
+<h2>Table</h2>
+<p>The table tag is used to create a table in an HTML document. It has an opening tag <code>&lt;table&gt;</code> and a closing tag <code>&lt;/table&gt;</code>.</p>
+<p>Syntax:</p>
+<pre><code>&lt;table border="1" bordercolor="black" bgcolor="white" background="url" rules="all" frame="box" height="200" cellpadding="5" cellspacing="5"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Header 1&lt;/th&gt;
+      &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td align="center" width="100" height="50" bgcolor="lightgrey" rowspan="2" colspan="2" background="url"&gt;Data 1&lt;/td&gt;
+      &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data 3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td colspan="3"&gt;Footer&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+<p>Attributes of Table tags are,</p>
+<ul>
+  <li><code>border="value"</code>: Specifies the border width of the table.</li>
+  <li><code>bordercolor="color"</code>: Specifies the border color of the table.</li>
+  <li><code>bgcolor="color"</code>: Specifies the background color of the table.</li>
+  <li><code>background="url"</code>: Specifies the background image of the table.</li>
+  <li><code>rules="none|groups|rows|cols|all"</code>: Specifies the rules for the table borders.</li>
+  <li><code>frame="void|above|below|hsides|lhs|rhs|vsides|box|border"</code>: Specifies which parts of the frame to display.</li>
+  <li><code>height="value"</code>: Specifies the height of the table.</li>
+  <li><code>cellpadding="value"</code>: Specifies the space between the cell content and its borders.</li>
+  <li><code>cellspacing="value"</code>: Specifies the space between the cells.</li>
+</ul>
+<p>Attributes of TD tags are,</p>
+<ul>
+  <li><code>align="left|center|right"</code>: Specifies the alignment of the cell content.</li>
+  <li><code>width="value"</code>: Specifies the width of the cell.</li>
+  <li><code>height="value"</code>: Specifies the height of the cell.</li>
+  <li><code>bgcolor="color"</code>: Specifies the background color of the cell.</li>
+  <li><code>rowspan="value"</code>: Specifies the number of rows a cell should span.</li>
+  <li><code>colspan="value"</code>: Specifies the number of columns a cell should span.</li>
+  <li><code>background="url"</code>: Specifies the background image of the cell.</li>
+</ul>
+<p>Output:</p>
+<table border="1" bordercolor="black" bgcolor="white" frame="box" height="200" cellpadding="5" cellspacing="5">
+  <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" width="100" height="50" bgcolor="lightgrey" rowspan="2" colspan="2" background="url">Data 1</td>
+      <td>Data 2</td>
+    </tr>
+    <tr>
+      <td>Data 3</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">Footer</td>
+    </tr>
+  </tfoot>
+</table>
+
+<h2>Form Tag</h2>
+<p>The form tag is used to create a form in an HTML document. It has an opening tag <code>&lt;form&gt;</code> and a closing tag <code>&lt;/form&gt;</code>.</p>
+<p>Syntax:</p>
+<pre><code>&lt;form name="formName" enctype="multipart/form-data" method="post" action="url"&gt;
+  &lt;input type="text" name="inputName" value="defaultValue" size="20" maxlength="30" align="left"&gt;
+  &lt;input type="checkbox" name="checkboxName" checked&gt;
+  &lt;select name="selectName" multiple size="3"&gt;
+    &lt;option value="1" selected&gt;Option 1&lt;/option&gt;
+    &lt;option value="2"&gt;Option 2&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;textarea name="textareaName" cols="30" rows="10"&gt;Default text&lt;/textarea&gt;
+&lt;/form&gt;</code></pre>
+<p>Attributes of Form tags are,</p>
+<ul>
+  <li><code>name="formName"</code>: Specifies the name of the form.</li>
+  <li><code>enctype="multipart/form-data"</code>: Specifies the encoding type of the form data.</li>
+  <li><code>method="get|post"</code>: Specifies the HTTP method to use when sending form data.</li>
+  <li><code>action="url"</code>: Specifies the URL to send the form data to.</li>
+</ul>
+<p>Attributes of Input tags are,</p>
+<ul>
+  <li><code>name="inputName"</code>: Specifies the name of the input field.</li>
+  <li><code>checked</code>: Specifies that the input field should be pre-selected.</li>
+  <li><code>value="defaultValue"</code>: Specifies the default value of the input field.</li>
+  <li><code>size="value"</code>: Specifies the width of the input field.</li>
+  <li><code>maxlength="value"</code>: Specifies the maximum number of characters allowed in the input field.</li>
+  <li><code>align="left|right|top|middle|bottom"</code>: Specifies the alignment of the input field.</li>
+</ul>
+<p>Attributes of Select tags are,</p>
+<ul>
+  <li><code>name="selectName"</code>: Specifies the name of the select field.</li>
+  <li><code>multiple</code>: Specifies that multiple options can be selected.</li>
+  <li><code>size="value"</code>: Specifies the number of visible options in the select field.</li>
+</ul>
+<p>Attributes of Textarea tags are,</p>
+<ul>
+  <li><code>cols="value"</code>: Specifies the width of the textarea.</li>
+  <li><code>rows="value"</code>: Specifies the height of the textarea.</li>
+  <li><code>name="textareaName"</code>: Specifies the name of the textarea.</li>
+</ul>
+<p>Output:</p>
+<form name="formName" enctype="multipart/form-data" method="post" action="url">
+  <input type="text" name="inputName" value="defaultValue" size="20" maxlength="30" align="left">
+  <input type="checkbox" name="checkboxName" checked>
+  <select name="selectName" multiple size="3">
+    <option value="1" selected>Option 1</option>
+    <option value="2">Option 2</option>
+  </select>
+  <textarea name="textareaName" cols="30" rows="10">Default text</textarea>
+</form>
+
+<h2>Audio Tag</h2>
+<p>The audio tag is used to embed sound content in an HTML document. It has an opening tag <code>&lt;audio&gt;</code> and a closing tag <code>&lt;/audio&gt;</code>.</p>
+<p>Syntax:</p>
+<pre><code>&lt;audio controls&gt;
+  &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+  Your browser does not support the audio element.
+&lt;/audio&gt;</code></pre>
+<p>Attributes of Audio tags are,</p>
+<ul>
+  <li><code>controls</code>: Specifies that audio controls should be displayed.</li>
+</ul>
+<p>Attributes of Source tags are,</p>
+<ul>
+  <li><code>src="url"</code>: Specifies the URL of the audio file.</li>
+  <li><code>type="audio/mpeg"</code>: Specifies the MIME type of the audio file.</li>
+</ul>
+<p>Output:</p>
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<h2>Video Tag</h2>
+<p>The video tag is used to embed video content in an HTML document. It has an opening tag <code>&lt;video&gt;</code> and a closing tag <code>&lt;/video&gt;</code>.</p>
+<p>Syntax:</p>
+<pre><code>&lt;video controls width="320" height="240"&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  Your browser does not support the video element.
+&lt;/video&gt;</code></pre>
+<p>Attributes of Video tags are,</p>
+<ul>
+  <li><code>controls</code>: Specifies that video controls should be displayed.</li>
+  <li><code>width="value"</code>: Specifies the width of the video player.</li>
+  <li><code>height="value"</code>: Specifies the height of the video player.</li>
+</ul>
+<p>Output:</p>
+<video controls width="320" height="240">
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video element.
+</video>
+</body>
+</html>
